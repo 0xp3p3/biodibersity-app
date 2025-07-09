@@ -35,7 +35,7 @@ export function PopularSpecies({ onSpeciesSelect }: PopularSpeciesProps) {
   useEffect(() => {
     const fetchPopularSpecies = async () => {
       try {
-        const response = await fetch("http://localhost:8000/api/popular-species")
+        const response = await fetch("http://3.88.14.163:8000/api/popular-species")
         if (!response.ok) throw new Error("Failed to fetch popular species")
 
         const data = await response.json()

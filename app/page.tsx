@@ -49,7 +49,7 @@ export default function Dashboard() {
 
     try {
       // Only fetch timeline data - map will use dataset key from species data
-      const timelineResponse = await fetch(`http://localhost:8000/api/species/${species.key}/timeline?country=PL`)
+      const timelineResponse = await fetch(`http://3.88.14.163:8000/api/species/${species.key}/timeline?country=PL`)
       if (!timelineResponse.ok) throw new Error("Failed to fetch timeline data")
       const timeline = await timelineResponse.json()
       setTimelineData(timeline)

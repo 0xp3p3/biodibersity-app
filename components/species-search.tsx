@@ -41,7 +41,7 @@ export function SpeciesSearch({ onSpeciesSelect }: SpeciesSearchProps) {
 
     setLoading(true)
     try {
-      const response = await fetch(`http://localhost:8000/api/species/search?q=${encodeURIComponent(searchQuery)}`)
+      const response = await fetch(`http://3.88.14.163:8000/api/species/search?q=${encodeURIComponent(searchQuery)}`)
       if (!response.ok) throw new Error("Search failed")
 
       const data = await response.json()

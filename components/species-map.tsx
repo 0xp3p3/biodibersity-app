@@ -90,14 +90,14 @@ export function SpeciesMap({ selectedSpecies }: SpeciesMapProps) {
             {tiles.map((tile) => (
               <img
                 key={`${tile.z}-${tile.x}-${tile.y}`}
-                src={`http://localhost:8000/api/map/${tile.z}/${tile.x}/${tile.y}?dataset_key=${selectedSpecies.datasetKey}`}
+                src={`http://3.88.14.163:8000/api/map/${tile.z}/${tile.x}/${tile.y}?dataset_key=${selectedSpecies.datasetKey}`}
                 alt={`Map tile ${tile.x},${tile.y}`}
                 className="w-full h-full object-cover"
                 style={{ width: "80px", height: "80px" }}
                 // onError={(e) => {
                 //   // Fallback to base map if observation tile fails to load
                 //   const target = e.target as HTMLImageElement;
-                //   target.src = `http://localhost:8000/api/map/tile/${tile.z}/${tile.x}/${tile.y}`;
+                //   target.src = `http://3.88.14.163:8000/api/map/tile/${tile.z}/${tile.x}/${tile.y}`;
                 //   target.style.backgroundColor = "#f3f4f6";
                 // }}
               />
@@ -111,14 +111,14 @@ export function SpeciesMap({ selectedSpecies }: SpeciesMapProps) {
             {tiles.map((tile) => (
               <img
                 key={`${tile.z}-${tile.x}-${tile.y}`}
-                src={`http://localhost:8000/api/map/tile/${tile.z}/${tile.x}/${tile.y}?dataset_key=${selectedSpecies.datasetKey}`}
+                src={`http://3.88.14.163:8000/api/map/tile/${tile.z}/${tile.x}/${tile.y}?dataset_key=${selectedSpecies.datasetKey}`}
                 alt={`Map tile ${tile.x},${tile.y}`}
                 className="w-full h-full object-cover"
                 style={{ width: "80px", height: "80px" }}
                 onError={(e) => {
                   // Fallback to base map if observation tile fails to load
                   const target = e.target as HTMLImageElement;
-                  target.src = `http://localhost:8000/api/map/tile/${tile.z}/${tile.x}/${tile.y}`;
+                  target.src = `http://3.88.14.163:8000/api/map/tile/${tile.z}/${tile.x}/${tile.y}`;
                   target.style.backgroundColor = "#f3f4f6";
                 }}
               />

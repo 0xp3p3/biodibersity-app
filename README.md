@@ -72,7 +72,7 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-The API will be available at \`http://localhost:8000\`
+The API will be available at \`http://3.88.14.163:8000\`
 
 ### Frontend Setup
 1. Install Node.js dependencies:
